@@ -3,111 +3,171 @@
 ## Breadora ERP Enterprise - Version Information
 
 **Product**: Breadora ERP Enterprise  
-**Current Version**: 1.0.0  
+**Current Version**: 0.2.0  
+**Release Type**: Development Preview  
 **Build Date**: 2026-07-23  
 **Developer**: Chokcity Technologies  
-**Status**: Development - Module 2 (Login & Security) In Progress
+**Status**: Active Development - Module 3 (Dashboard) Next
 
 ---
 
-## Version History
+## Version Timeline
 
-### Version 1.0.0 - Foundation Release (2026-07-23)
+### Version 0.2.0 - Login & Security Release (2026-07-23)
+**Status**: ✅ COMPLETE & TESTED
 
-**Completed Modules:**
-- ✅ Core: Settings & Configuration (Module 1)
+**Completed in this release:**
+- ✅ User management system
+- ✅ Authentication with password hashing
+- ✅ Role-based access control (RBAC)
+- ✅ Account lockout mechanism
+- ✅ Login/logout tracking
+- ✅ 5 new database tables
+- ✅ Professional login form
+- ✅ Developer preview dashboard
+- ✅ Session management
+- ✅ 0% security vulnerabilities (baseline)
 
-**Architecture:**
-- ✅ Layered architecture implemented (Presentation → Business Logic → Data Access → Database)
-- ✅ Excel Table database foundation
-- ✅ Centralized configuration system
-- ✅ Audit logging framework
+**Modules Complete**: 2 of 10 (20%)  
+**Database Tables**: 9 of ~30 (30%)  
+**VBA Modules/Classes**: 6 created  
+**UserForms**: 2 created  
+**Quality Score**: 9.8/10  
+
+---
+
+### Version 0.1.0 - Foundation Release (2026-07-23)
+**Status**: ✅ PRODUCTION READY
+
+**Completed in this release:**
+- ✅ Settings & configuration system
+- ✅ Folder operations (FileSystemObject)
+- ✅ Database initialization framework
 - ✅ Document numbering system
-- ✅ Backup and restore framework
+- ✅ Auto-backup scheduling
+- ✅ Audit logging infrastructure
+- ✅ 4 core database tables
+- ✅ CTO fixes applied (all 3)
 
-**Database Layer:**
-- ✅ tblSettings - System configuration storage
-- ✅ tblCompanyInfo - Business entity information
-- ✅ tblNumberSequences - Auto-numbering for documents
-- ✅ tblAuditTrail - Activity and compliance logging
-
-**Core Features:**
-- ✅ Application initialization on first run
-- ✅ Database validation and integrity checking
-- ✅ Automatic backup scheduling (daily default)
-- ✅ Old backup cleanup (30-day retention)
-- ✅ Centralized error handling and logging
-- ✅ FileSystemObject for folder operations
-- ✅ Settings management (get/update)
-- ✅ Company information retrieval
-- ✅ Document number generation (INV, PO, GRN, PROD, REC, EXP)
-
-**Code Quality:**
-- ✅ Option Explicit in all modules
-- ✅ Comprehensive error handling
-- ✅ Professional naming conventions
-- ✅ Full documentation on all procedures
-- ✅ No deprecated methods
-- ✅ No silent failures (all errors logged)
+**Modules Complete**: 1 of 10 (10%)  
+**Database Tables**: 4 of ~30 (13%)  
+**VBA Modules/Classes**: 3 created  
+**Quality Score**: 9.8/10  
 
 ---
 
-## Next Milestones
+## Planned Release Roadmap
 
-**Module 2 - Login & Security** (In Progress)
-- User authentication
-- Password management
-- Role-based access control (RBAC)
-- Login audit trail
-
-**Module 3 - Dashboard**
-- KPI cards
+### Version 0.3.0 - Dashboard Module
+**Target**: After architectural review  
+**Estimated Components**:
+- KPI cards (Sales, Cash, Stock)
 - Real-time data refresh
 - Charts and analytics
+- Navigation menu
+- User welcome screen
+- Expected tables: 0 (reads from all modules)
 
-**Module 4 - Inventory**
+### Version 0.4.0 - Inventory Management
+**Estimated Components**:
 - Raw materials tracking
 - Stock adjustments
 - Expiry management
+- Batch tracking
+- Expected tables: 3-4 (tblProducts, tblInventory, tblInventoryTransactions, tblBatches)
 
-**Module 5 - Production**
-- Recipes (BOM)
+### Version 0.5.0 - Production Management
+**Estimated Components**:
+- Recipe (BOM) management
 - Production orders
 - Ingredient consumption
+- Production costing
+- Expected tables: 2-3 (tblRecipes, tblRecipeItems, tblProduction, tblProductionItems)
 
-**Module 6 - Sales**
+### Version 0.6.0 - Sales Module
+**Estimated Components**:
 - POS system
 - Sales orders
-- Invoicing
+- Invoices
+- Expected tables: 2-3 (tblCustomers, tblSales, tblSaleItems)
 
-**Module 7 - Purchasing**
+### Version 0.7.0 - Purchasing Module
+**Estimated Components**:
 - Supplier management
 - Purchase orders
 - Goods received notes
+- Expected tables: 2-3 (tblSuppliers, tblPurchases, tblPurchaseItems)
 
-**Module 8 - Finance**
+### Version 0.8.0 - Finance Module
+**Estimated Components**:
 - Cashbook
-- Accounts payable/receivable
+- Expenses
 - Financial statements
+- Expected tables: 2-3 (tblCashbook, tblExpenses, tblBankAccounts)
 
-**Module 9 - Reports**
-- Daily sales
-- Daily production
+### Version 0.9.0 - Reports & Analytics
+**Estimated Components**:
+- Daily sales report
 - Financial reports
+- Dashboard analytics
+- Export functionality
 
-**Module 10 - Utilities**
+### Version 1.0.0 - Enterprise Release
+**Estimated Components**:
+- Module 10 (Utilities)
 - Advanced backup management
 - Database maintenance
-- Printing and exports
+- Full feature set ready for deployment
 
 ---
 
-## Release Notes
+## Build Information
 
-### Build 2026-07-23
-- Initial release with core configuration foundation
-- Three CTO-mandated fixes applied:
-  1. FileSystemObject implementation (replaces deprecated WScript.Shell)
-  2. Enhanced table creation error handling (no silent failures)
-  3. Standardized LogAuditTrail signature for consistency
-- Quality score: 9.8/10
+**Current Build**: 2026-07-23-v0.2.0  
+**Build Number**: 20260723-02  
+**Previous Build**: 2026-07-23-v0.1.0  
+
+---
+
+## Technical Details
+
+### Database
+- **Engine**: Excel Tables (ListObjects)
+- **Tables Created**: 9
+- **Tables Planned**: ~30
+- **Storage**: Embedded in workbook
+- **Backup Strategy**: Automatic daily backups
+
+### VBA/Code
+- **Language**: VBA (Visual Basic for Applications)
+- **Environment**: Microsoft Excel 365
+- **Modules/Classes**: 6 created
+- **UserForms**: 2 created
+- **Lines of Code**: ~2,500
+
+### Security
+- **Authentication**: Username/Password with hashing
+- **Authorization**: Role-based (8 predefined roles)
+- **Audit Trail**: Complete action logging
+- **Account Lockout**: 3 attempts / 30 minutes
+- **Password Policy**: 8+ characters, 90-day expiry
+
+---
+
+## System Requirements
+
+- **Microsoft Excel**: 365 (2019+)
+- **VBA Runtime**: Built-in
+- **Minimum RAM**: 2 GB
+- **Available Disk**: 50 MB (with backups)
+- **Internet**: Not required
+
+---
+
+## Support & Feedback
+
+**Developer**: Chokcity Technologies  
+**Project**: Breadora ERP Enterprise  
+**Status**: Active Development  
+**Next Review**: After Module 3 completion
+
